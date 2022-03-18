@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hannabui-portfolio1/static/css/main.073c9b0a.css",
+    "main.js": "/hannabui-portfolio1/static/js/main.91d7f1c3.js",
+    "static/js/787.90895c91.chunk.js": "/hannabui-portfolio1/static/js/787.90895c91.chunk.js",
+    "index.html": "/hannabui-portfolio1/index.html",
+    "main.073c9b0a.css.map": "/hannabui-portfolio1/static/css/main.073c9b0a.css.map",
+    "main.91d7f1c3.js.map": "/hannabui-portfolio1/static/js/main.91d7f1c3.js.map",
+    "787.90895c91.chunk.js.map": "/hannabui-portfolio1/static/js/787.90895c91.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.91d7f1c3.js"
+  ]
+}
