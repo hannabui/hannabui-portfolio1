@@ -33,6 +33,9 @@ function Squats({ name }) {
             style={buttonStyle}
             onClick={() => setCount(count => 0)}>Reset
             </button>
+            <button style={buttonStyle}>
+            How-To
+            </button>
         </>
     )
 }
