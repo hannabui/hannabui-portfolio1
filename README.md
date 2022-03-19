@@ -1,5 +1,5 @@
 # hannabui-portfolio1
-Click the link below to go to my Github Page
+Click the link to go to my Github Page
 https://hannabui.github.io/hannabui-portfolio1/
 
 My portfolio 1 is based on lab5. 
