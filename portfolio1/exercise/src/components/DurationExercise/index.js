@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+//styling
 const buttonStyle = {
     backgroundColor: 'lightPink',
     width: '100%',
@@ -14,12 +14,19 @@ const buttonStyle = {
     fontSize: '24px',
     margin: '6px'
   }
-const textStyle = {
+  const textStyle = {
     fontSize: '34px',
     textAlign: 'center',
     fontFamily: 'Georgia'
-}
-function Running({ name, tick }) {
+  }
+  const howtoStyle = {
+    fontSize: '24ppx',
+    textAlign: 'center',
+    fontFamily: 'Georgia',
+    borderStyle: 'solid'
+  }
+//function
+function Running({ name, tick, howtoRun }) {
     const [run, setRun] = useState(undefined);
     const [seconds, setSeconds] = useState(0);
     const [milliseconds, setMilliseconds] = useState(0);
@@ -42,25 +49,22 @@ function Running({ name, tick }) {
     useEffect(() => {
         return () => reset();
     }, []);
-    //how-to button
- 
+
     //returning the time and two buttons
     return (
         <>
             <div style={textStyle} >{name}</div>
+            <div style={howtoStyle}>{howtoRun}</div>
             <div style={textStyle} >{seconds}:{milliseconds}</div>
             <button 
             style={buttonStyle} 
             onClick={() => setRun(Date.now())}>Start
             </button>
-            <button 
-            style={buttonStyle} 
+            <button style={buttonStyle}
             onClick={() => reset()}>Reset
-            </button>
-            <button style={buttonStyle}>
-            How-To
             </button>
         </>
     );
 }
+
 export default Running;
