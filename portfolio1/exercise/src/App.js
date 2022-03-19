@@ -2,7 +2,7 @@ import './App.css';
 import Squats from './components/RepetitionExercise';
 import Running from './components/DurationExercise';
 import React, { useEffect, useState } from 'react';
-
+//styling
 const buttonStyle = {
   backgroundColor: 'lightPink',
   width: '100%',
@@ -17,6 +17,7 @@ const buttonStyle = {
   fontSize: '24px',
   margin: '6px'
 }
+
 const headerStyle = {
   backgroundColor: 'lightPink',
   color: 'white',
@@ -24,13 +25,22 @@ const headerStyle = {
   fontFamily: 'Georgia',
   textAlign: 'center'
 }
+//function
 export default function App() {
   let [currentCount, setCurrentCount] = useState(0);
   let [displayComp, setDisplayComp] = useState(-1);
   const [tick, setTick] = useState(0);
   let componenets = [
-    <Squats name="Squats" count={currentCount} setCount={setCurrentCount}></Squats>,
-    <Running name="Running" minutes={2} tick={tick} increment></Running>
+    <Squats name="Squats" count={currentCount} setCount={setCurrentCount}
+    howtoSquat="When squating, you want your feet shoulder-width apart, feet and back straight. 
+    When squating down, go down until your leg bends at a 90 degree angle nand come back up. 
+    Make sure you are also looking forward with your shoulders rolled back."
+    ></Squats>,
+    <Running name="Running" minutes={2} tick={tick} increment
+    howtoRun="To train to run properly, you want to start running 2-3 times a 
+    week for 20-30 minutes. Drink lots of water and roll your feet from heel to toe in good 
+    running shoes."
+    ></Running>
   ]
 //intervaling per tick and clearing when returned
   useEffect(() => {
