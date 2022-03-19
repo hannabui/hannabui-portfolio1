@@ -1,5 +1,24 @@
 import React, { useEffect, useState } from 'react';
 
+const buttonStyle = {
+    backgroundColor: 'lightPink',
+    width: '100%',
+    height: '100%',
+    border: 'white',
+    color: 'white',
+    padding: '10px 20px',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    textAlign: 'center',
+    fontFamily: 'Georgia',
+    fontSize: '24px',
+    margin: '6px'
+  }
+const textStyle = {
+    fontSize: '34px',
+    textAlign: 'center',
+    fontFamily: 'Georgia'
+}
 function Running({ name, tick }) {
     const [run, setRun] = useState(undefined);
     const [seconds, setSeconds] = useState(0);
@@ -23,13 +42,24 @@ function Running({ name, tick }) {
     useEffect(() => {
         return () => reset();
     }, []);
+    //how-to button
+ 
     //returning the time and two buttons
     return (
         <>
-            <div>{name}</div>
-            <div>{seconds}:{milliseconds}</div>
-            <button onClick={() => setRun(Date.now())}>Start</button>
-            <button onClick={() => reset()}>Reset</button>
+            <div style={textStyle} >{name}</div>
+            <div style={textStyle} >{seconds}:{milliseconds}</div>
+            <button 
+            style={buttonStyle} 
+            onClick={() => setRun(Date.now())}>Start
+            </button>
+            <button 
+            style={buttonStyle} 
+            onClick={() => reset()}>Reset
+            </button>
+            <button style={buttonStyle}>
+            How-To
+            </button>
         </>
     );
 }
