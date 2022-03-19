@@ -10,4 +10,5 @@ Centerd texts and changed the font size and style
 
 Changed the button sizes and style
 
-Added a new button in each exercise "How-To" that would load in the alert window to show how to do the exercise.
+Added a new button "How-To" in each exercise that would tell the user
+how to do the exercise properly.
