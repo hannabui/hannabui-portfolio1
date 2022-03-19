@@ -23,6 +23,7 @@ const buttonStyle = {
     fontSize: '24ppx',
     textAlign: 'center',
     fontFamily: 'Georgia',
+    padding: '20px',
     borderStyle: 'solid'
   }
 //function
