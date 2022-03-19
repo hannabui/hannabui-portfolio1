@@ -2,29 +2,7 @@ import './App.css';
 import Squats from './components/RepetitionExercise';
 import Running from './components/DurationExercise';
 import React, { useEffect, useState } from 'react';
-//styling
-const buttonStyle = {
-  backgroundColor: 'lightPink',
-  width: '100%',
-  height: '100%',
-  border: 'white',
-  color: 'white',
-  padding: '10px 20px',
-  textDecoration: 'none',
-  borderRadius: '5px',
-  textAlign: 'center',
-  fontFamily: 'Georgia',
-  fontSize: '24px',
-  margin: '6px'
-}
 
-const headerStyle = {
-  backgroundColor: 'lightPink',
-  color: 'white',
-  fontSize: '44px',
-  fontFamily: 'Georgia',
-  textAlign: 'center'
-}
 //function
 export default function App() {
   let [currentCount, setCurrentCount] = useState(0);
@@ -67,4 +45,27 @@ export default function App() {
       }
     </>
   );
+}
+//styling
+const buttonStyle = {
+  backgroundColor: 'lightPink',
+  width: '100%',
+  height: '100%',
+  border: 'white',
+  color: 'white',
+  padding: '10px 20px',
+  textDecoration: 'none',
+  borderRadius: '5px',
+  textAlign: 'center',
+  fontFamily: 'Georgia',
+  fontSize: '24px',
+  margin: '6px'
+}
+
+const headerStyle = {
+  backgroundColor: 'lightPink',
+  color: 'white',
+  fontSize: '44px',
+  fontFamily: 'Georgia',
+  textAlign: 'center'
 }
