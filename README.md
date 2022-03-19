@@ -10,5 +10,4 @@ Centerd texts and changed the font size and style
 
 Changed the button sizes and style
 
-Added a new button "How-To" in each exercise that would tell the user
-how to do the exercise properly.
+Added a description on how to do the exercise
