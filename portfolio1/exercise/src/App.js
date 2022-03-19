@@ -11,7 +11,7 @@ export default function App() {
   let componenets = [
     <Squats name="Squats" count={currentCount} setCount={setCurrentCount}
     howtoSquat="When squating, you want your feet shoulder-width apart, feet and back straight. 
-    When squating down, go down until your leg bends at a 90 degree angle nand come back up. 
+    When squating down, go down until your leg bends at a 90 degree angle and come back up. 
     Make sure you are also looking forward with your shoulders rolled back."
     ></Squats>,
     <Running name="Running" minutes={2} tick={tick} increment
