@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//styling
 const buttonStyle = {
     backgroundColor: 'lightPink',
     width: '100%',
@@ -18,12 +18,20 @@ const buttonStyle = {
     fontSize: '34px',
     textAlign: 'center',
     fontFamily: 'Georgia'
-}
-function Squats({ name }) {
+  }
+  const howtoStyle = {
+    fontSize: '24ppx',
+    textAlign: 'center',
+    fontFamily: 'Georgia',
+    borderStyle: 'solid'
+  }
+//function
+function Squats({ name, howtoSquat }) {
     let [count, setCount] = useState(0)
     return (
         <>
             <div style={textStyle}>{name}</div>
+            <div style={howtoStyle}>{howtoSquat}</div>
             <div style={textStyle}>The rep count is {count}</div>
             <button 
             style={buttonStyle}
@@ -32,9 +40,6 @@ function Squats({ name }) {
             <button 
             style={buttonStyle}
             onClick={() => setCount(count => 0)}>Reset
-            </button>
-            <button style={buttonStyle}>
-            How-To
             </button>
         </>
     )
