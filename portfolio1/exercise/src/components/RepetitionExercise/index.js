@@ -1,4 +1,25 @@
 import React, { useState } from "react";
+
+//function
+function Squats({ name, howtoSquat }) {
+    let [count, setCount] = useState(0)
+    return (
+        <>
+            <div style={textStyle}>{name}</div>
+            <div style={howtoStyle}>{howtoSquat}</div>
+            <div style={textStyle}>The rep count is {count}</div>
+            <button 
+            style={buttonStyle}
+            onClick={() => setCount(count => count + 1)}>Add rep
+            </button>
+            <button 
+            style={buttonStyle}
+            onClick={() => setCount(count => 0)}>Reset
+            </button>
+        </>
+    )
+}
+
 //styling
 const buttonStyle = {
     backgroundColor: 'lightPink',
@@ -26,25 +47,5 @@ const buttonStyle = {
     padding: '20px',
     borderStyle: 'solid'
   }
-//function
-function Squats({ name, howtoSquat }) {
-    let [count, setCount] = useState(0)
-    return (
-        <>
-            <div style={textStyle}>{name}</div>
-            <div style={howtoStyle}>{howtoSquat}</div>
-            <div style={textStyle}>The rep count is {count}</div>
-            <button 
-            style={buttonStyle}
-            onClick={() => setCount(count => count + 1)}>Add rep
-            </button>
-            <button 
-            style={buttonStyle}
-            onClick={() => setCount(count => 0)}>Reset
-            </button>
-        </>
-    )
-}
-
 export default Squats;
 
